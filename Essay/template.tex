@@ -26,7 +26,7 @@
 \usepackage{bbding}
 
 \title{Topic 2 -- ``Developing successful cloud software'' \\
-\large{An overview on the main trends and challenges in microservices}} % subtitle that should be changed
+\large{A peek on the main trends and challenges with a focus on microservices}} % subtitle that should be changed
 
 \author{Nicola Meneghetti \\
 	Email: menego1983@gmail.com \\ 
@@ -41,7 +41,7 @@
 
 \begin{abstract}
 
-In this essay I took into consideration the main aspects that characterize cloud computing. In particular I provided an overview on how the classical software development process is impacted. I then narrowed down my research analyzing some aspects of the tool-chain that is required in regards with the creation of microservices with a brief overview on the possible future of automatic development. Lastly I stressed out how security is not addressed enough by expert developers and by the actual literature available on microservices.
+This essay takes into consideration the main aspects that characterize cloud computing. In particular it provides an overview on how the classical software development process is impacted. It then narrows down the research by analyzing some aspects of the tool-chain that is required in regards with the creation of microservices with a brief overview on the possible future of automatic development. Lastly, it points out how security is not addressed enough by expert developers and by the actual literature available on microservices.
 
 \end{abstract}
 
@@ -52,20 +52,22 @@ During the last decade we experienced a big change in the way software is develo
 In fact many efforts are being made in the creation of an ecosystem able to assist and facilitate developers in these processes. As reported by G. Fylaktopoulos et al.~\cite{overview-platforms}, we already have at our disposal a whole set of integrated development environments (IDE) that offer a series of functionalities to create, test and deploy cloud software.  These platforms are able to support many programming languages together with the relative debugger and testing framework. They can be used as web application without the need of an on-premise installation. They offer versioning capabilities such as git\footnote{https://git-scm.com/}. Few of them also provide code collaboration tools (e.g. AWS Cloud9\footnote{https://docs.aws.amazon.com/cloud9/}) similar to Google docs\footnote{https://www.google.com/docs/about/}. However these products, despite showing that some steps are being taken in the right direction, are still far from completion and in general there is still no feature parity with their desktop-based counterparts.
 
 Furthermore, considering the increasing abstraction that comes with cloud computing, there are no environments able to leverage multi-layer
-programming and MDE, hence simplifying and automating, in part, software development~\cite{overview-platforms}. Nonetheless, there is already some promising work in this regard. In their paper \textit{Cloud Automatic Software Development}, H.Benfenatki et al.~\cite{automatic-dev} theorized and showcased a paradigm in which it is possible to create cloud software without a deep programming knowledge if not at all. This new kind of service, called Automatic Software Development as a service (ASDaaS), leverages all the core concepts of cloud computing. Based on simple business requirements and through service discovery, the final application is the result of a composition of existing microservices and the automatic creation of the missing ones. The whole purpose of this approach is to free the software programmer from the task of developing functionalities required by the client and to focus more in the enactment of other important activities.
+programming and MDE, hence simplifying and automating, in part, software development~\cite{overview-platforms}. Nonetheless, there is already some promising work in this regard. In their paper \textit{Cloud Automatic Software Development}, H.Benfenatki et al.~\cite{automatic-dev} theorized and showcased a paradigm in which it is possible to create cloud software without a deep programming knowledge if not at all. This new kind of service, called Automatic Software Development as a Service (ASDaaS), leverages all the core concepts of cloud computing. Based on simple business requirements and through service discovery, the final application is the result of a composition of existing microservices and the automatic creation of the missing ones. The whole purpose of this approach is to free the software programmer from the task of developing functionalities required by the client and to focus more in the enactment of other important activities that are usually left aside or given less priority due to time pressure.
 
-Indeed security is one of the less treated topics in microservices related research and the first source of concern among software developers. In their work, M.S.Hamzehloui et al.~\cite{research-mss} analyze the main areas of interest about microservices in order to highlight the key characteristics and to bring out important topics that still require additional study. In more than one occasion they analyze a series of systematic mappings comprising tents of papers about microservices and the outcome stresses out how security is one of the least discussed attributes. Also in the survey conducted by J.Ghofrani et al.~\cite{challenges-mss}, becomes apparent how security is the main concern when experts needs to design and develop microservices. This provides a clear direction in which developers should put more effort.
+In fact, as a consequence of the aforementioned case, security is considered one of the less treated topics in microservices related research and the first source of concern among software developers~\cite{research-mss, challenges-mss}. In their work, M.S.Hamzehloui et al.~\cite{research-mss} analyze the main areas of interest about microservices in order to highlight the key characteristics and to bring out important topics that still require additional study. In more than one occasion they analyze a series of systematic mappings comprising tents of papers about microservices and the outcome stresses out how security is one of the least discussed attributes. Also in the survey conducted by J.Ghofrani et al.~\cite{challenges-mss}, becomes apparent how security is the main concern when experts needs to design and develop microservices. This provides a clear direction in which developers should put more effort.
 
 \section{Ideas}
 
 Following the considerations exposed in the introduction, I formulated 3 research questions:
 \begin{enumerate}
  	\item In this new scenario characterized by the convergence towards 'everything as a service' and the increasing abstraction of processes~\cite{automatic-dev}, what is the main trend in the evolution of processes that aim to lean down the software application development effort?
- 	\item What are the changes in the software development tool-chain that the already existing solutions do not offer yet but are essential for the production of cloud software? 
+ 	\item What are the changes in the software development tool-chain that  are essential for the production of cloud software but are not offered yet by the existing solutions?
 	\item How can we improve the awareness and standardize the adoption of security methodologies in microservices?
 \end{enumerate}
 
+\section{Future work}
 
+Lorem ispum lorem dolor sit amet.
 
 % References ~\cite{id}, a-word\footnote{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
 \bibliographystyle{IEEEtran}
