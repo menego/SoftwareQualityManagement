@@ -26,7 +26,7 @@
 \usepackage{bbding}
 
 \title{Topic 2 -- ``Developing successful cloud software'' \\
-\large{A peek on the main trends and challenges with a focus on microservices}} % subtitle that should be changed
+\large{A peek on the main trends and challenges about microservices design and development}} % subtitle that should be changed
 
 \author{Nicola Meneghetti \\
 	Email: menego1983@gmail.com \\ 
@@ -41,7 +41,7 @@
 
 \begin{abstract}
 
-This essay takes into consideration the main aspects that characterize cloud computing. In particular it provides an overview on how the classical software development process is impacted. It then narrows down the research by analyzing some aspects of the tool-chain that is required in regards with the creation of microservices with a brief overview on the possible future of automatic development. Lastly, it points out how security is not addressed enough by expert developers and by the actual literature available on microservices.
+This essay takes into consideration the main aspects that characterize cloud computing. In particular it provides an overview on how the classical software development process is impacted. It then narrows down the research by analyzing some aspects related to the architectural methodologies and the tool-chain that come with the creation of microservices. After a brief overview on the possible future of automatic software development and its implications, it brings attention to the fact that security is a topic not addressed enough by expert developers and the actual literature available on the subject. Based on these outcomes, three research questions are provided in order to better define design techniques for microservices architecture, security  enactment and  essential tooling needed to aid programmers in the realization of these aspects.
 
 \end{abstract}
 
@@ -65,20 +65,21 @@ Following the considerations exposed in the introduction, I identified 3 areas o
 
 In this new scenario, characterized by the convergence towards 'everything as a service' and the increasing abstraction of processes~\cite{automatic-dev}, there is the need to determine the boundaries that define the behaviors of the various units that compose a cloud software solution~\cite{overview-platforms}. There is still much unclarity and besides some best practices~\cite{research-mss}, a clear set of methodologies is not completely defined yet. So, \textbf{what techniques are utilized to define the boundaries of a microservice in the architectural design phase?} A systematic review should be conducted in order to provide an answer to the question that arises from these considerations.
 
-\subsection{Tool-chain}
-
-In light of the knowledge derived from the previous study and considering what the actual landscape of IDE providers offers to cloud engineers, we need to retrieve more information for answering the following research question:\textbf{what are the changes in the software development tool-chain that are essential for the production of cloud software but are not offered yet by the existing means?}
-For this purpose, an additional survey should be conducted in order to gather critical requirements that are still missing and compare the outcomes with the features offered by the current solutions.
-
 \subsection{Security}
 
 As pointed out by the existing bibliography and as a result of the previous inquiries, it is safe to assert that one of the matters that requires more focus is security. It should be imperative then, that all the activities related to cloud software development are intertwined by practices that involve security assessment. In order to reach this result we need to provide an answer to the following question.
 \textbf{How can we improve the awareness and standardize the adoption of security methodologies in microservices?}
 A qualitative research will provide the necessary insights to understand the reasons why security is not addressed properly and how to mitigate such behavior.
 
+\subsection{Tool-chain}
+
+In light of the knowledge derived from the previous findings and considering what the actual landscape of IDE providers offers to cloud engineers, we need to retrieve more information for answering the following research question:\textbf{what are the changes in the software development tool-chain that are essential for the production of cloud applications but are not offered yet by the existing means in terms of microservices definition and security enforcement?}
+For this purpose, an additional survey should be conducted in order to gather critical requirements that are still missing and compare the outcomes with the features offered by the current solutions.
+
 \section{Future work}
 
-In this essay we analyzed, with and increasing degree of detail, the main challenges that architects and cloud developers usually face when it comes to the design and creation of microservices. We also provided an initial comparison between what is available and what is still necessary in regard of methodologies, tooling and security. Additional work should be conducted in order to determine how these outcomes should be employed in order to create a set of standard procedures.
+In this essay I analyzed, with an increasing degree of detail, the main challenges that architects and developers usually face when it comes to the design and creation of microservices. I highlighted some critical aspects regarding architectural principles, tooling and practices that still lack maturity. Lastly, I provided three research questions in order to gather information about techniques used to define the boundaries of microservices, methodologies to enforce security in all the development phases and available tools that can help in the realization of the previous two aspects.
+Additional work should be conducted in order to understand the process implementation of these findings.
 
 
 
