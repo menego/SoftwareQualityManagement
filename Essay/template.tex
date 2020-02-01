@@ -51,7 +51,7 @@ During the last decade we experienced a big change in the way software is develo
 
 As a matter of fact, there seems to be still some unclarity in what best defines techniques and methodologies for the creation of microservices. According to Sam Newman\cite{s-newman}, \textit{“microservices should be small, autonomous services that work together”}. Although this definition is clear and simple there is not an officially established way to address size and degree of independence if not by taking portions of classical methodologies that cover some of these aspects~\cite{overview-platforms}. For example the modularity and the loose coupling principles from SOA (Service Oriented Architecture)\footnote{\url{https://www.ibm.com/support/knowledgecenter/SSMQ79_9.5.1/com.ibm.egl.pg.doc/topics/pegl_serv_overview.html}} or the core concept of bounded context from DDD (Domain Driven Design)\footnote{\url{https://en.wikipedia.org/wiki/Domain-driven_design}} that constitutes the foundation of microservices\cite{ddd-microservices}.
 
-Nonetheless, many efforts are being made in the creation of an ecosystem able to assist and facilitate developers in these processes. As reported by G. Fylaktopoulos et al.~\cite{overview-platforms}, we already have at our disposal a whole set of integrated development environments (IDE) that offer a series of functionalities to create, test and deploy cloud software.  These platforms are able to support many programming languages together with the relative debugger and testing framework. They can be used as web application without the need of an on-premise installation. They offer versioning capabilities such as git\footnote{\url{https://git-scm.com/}}. Few of them also provide code collaboration tools (e.g. AWS Cloud9\footnote{\url{https://docs.aws.amazon.com/cloud9/}}) similar to Google docs\footnote{\url{https://www.google.com/docs/about/}}. However these products, despite showing that some steps are being taken in the right direction, are still far from completion and in general there is still no feature parity with their desktop-based counterparts.
+Nonetheless, many efforts are being made in the creation of an ecosystem able to assist and facilitate developers in these processes. As reported by G. Fylaktopoulos et al.~\cite{overview-platforms}, we already have at our disposal a whole set of integrated development environments (IDE) that offer a series of functionalities to create, test and deploy cloud software.  These platforms are able to support many programming languages together with the relative debugger and testing framework. They can be used as web application without the need of an on-premise installation. They offer versioning capabilities such as git\footnote{\url{https://git-scm.com/}}. Few of them also provide code collaboration tools (e.g. AWS Cloud9\footnote{\url{https://docs.aws.amazon.com/cloud9/}}) similar to Google docs\footnote{\url{https://www.google.com/docs/about/}}. However these products, despite showing that some steps are being taken in the right direction, are still far from completion and in general there is still no feature parity with their desktop-based counterparts~\cite{overview-platforms}.
 
 Furthermore, considering the increasing abstraction that comes with cloud computing, there are no environments able to leverage multi-layer programming and MDE, hence simplifying and automating, in part, software development~\cite{overview-platforms}. Nonetheless, there is already some promising work in this regard. In their paper \textit{Cloud Automatic Software Development}, H.Benfenatki et al.~\cite{automatic-dev} theorized and showcased a paradigm in which it is possible to create cloud software without a deep programming knowledge if not at all. This new kind of service, called Automatic Software Development as a Service (ASDaaS), leverages all the core concepts of cloud computing. Based on simple business requirements and through service discovery\footnote{\url{https://www.nginx.com/blog/service-discovery-in-a-microservices-architecture/}}, the final application is the result of a composition of existing microservices and the automatic creation of the missing ones. The whole purpose of this approach is to free the software programmer from the task of developing functionalities required by the client and to focus more in the enactment of other important activities that are usually left aside or given less priority due to time pressure.
 
@@ -63,29 +63,28 @@ Following the considerations exposed in the introduction, I identified 3 areas o
 
 \subsection{Boundaries}
 
-In this new scenario, characterized by the convergence towards 'everything as a service' and the increasing abstraction of processes~\cite{automatic-dev}, there is the need to determine the boundaries that define the behaviors of the various units that compose a cloud software solution. 
-
-% What is the main techniques in the evolution of processes that aim to lean down the software application development effort?
-
-\textbf{What techniques are utilized to define the boundaries of a microservice in the architectural design phase?}
+In this new scenario, characterized by the convergence towards 'everything as a service' and the increasing abstraction of processes~\cite{automatic-dev}, there is the need to determine the boundaries that define the behaviors of the various units that compose a cloud software solution~\cite{overview-platforms}. There is still much unclarity and besides some best practices~\cite{research-mss}, a clear set of methodologies is not completely defined yet. So, \textbf{what techniques are utilized to define the boundaries of a microservice in the architectural design phase?} A systematic review should be conducted in order to provide an answer to the question that arises from these considerations.
 
 \subsection{Tool-chain}
 
-\textbf{What are the changes in the software development tool-chain that are essential for the production of cloud software but are not offered yet by the existing solutions?}
+In light of the knowledge derived from the previous study and considering what the actual landscape of IDE providers offers to cloud engineers, we need to retrieve more information for answering the following research question:\textbf{what are the changes in the software development tool-chain that are essential for the production of cloud software but are not offered yet by the existing means?}
+For this purpose, an additional survey should be conducted in order to gather critical requirements that are still missing and compare the outcomes with the features offered by the current solutions.
 
 \subsection{Security}
 
+As pointed out by the existing bibliography and as a result of the previous inquiries, it is safe to assert that one of the matters that requires more focus is security. It should be imperative then, that all the activities related to cloud software development are intertwined by practices that involve security assessment. In order to reach this result we need to provide an answer to the following question.
 \textbf{How can we improve the awareness and standardize the adoption of security methodologies in microservices?}
-
+A qualitative research will provide the necessary insights to understand the reasons why security is not addressed properly and how to mitigate such behavior.
 
 \section{Future work}
 
-Lorem ispum lorem dolor sit amet.
+In this essay we analyzed, with and increasing degree of detail, the main challenges that architects and cloud developers usually face when it comes to the design and creation of microservices. We also provided an initial comparison between what is available and what is still necessary in regard of methodologies, tooling and security. Additional work should be conducted in order to determine how these outcomes should be employed in order to create a set of standard procedures.
 
-% References ~\cite{id}, a-word\footnote{Lorem ipsum dolor sit amet, consectetur adipiscing elit.}
+
+
+% References
 \bibliographystyle{IEEEtran}
 % your references should be in the file ref.bib
 \bibliography{IEEEabrv,ref}
-
 
 \end{document}
